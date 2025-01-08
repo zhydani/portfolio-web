@@ -12,6 +12,7 @@ import {
   ListItemText,
   Container,
   useMediaQuery,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -62,7 +63,19 @@ export function Navbar() {
                   height={60}
                   style={{ marginTop: 5, marginBottom: 2 }}
                 />
+                <Typography
+                  variant="h6"
+                  sx={{
+                    marginLeft: 1.5,
+                    fontWeight: "bold",
+                    color: "black",
+                    letterSpacing: "0.05rem",
+                  }}
+                >
+                  Z2 Sistemas
+                </Typography>
               </Box>
+
             </Link>
           </Box>
 
