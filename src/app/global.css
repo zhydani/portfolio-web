@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Chantilly Serial';
+    src: url('/fonts/chantilly/Chantilly-Serial Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chantilly Serial';
+    src: url('/fonts/chantilly/Chantilly-Serial Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
