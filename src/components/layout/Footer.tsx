@@ -3,8 +3,8 @@
 import React from 'react';
 import { Box, Container, Typography, Link, Divider } from '@mui/material';
 import Image from 'next/image';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export function Footer() {
@@ -29,6 +29,7 @@ export function Footer() {
             gap: 4,
           }}
         >
+          {/* Logo */}
           <Box sx={{ flex: 1, minWidth: '250px', textAlign: { xs: 'center', sm: 'left' } }}>
             <Image
               src="/logo-z2.png"
@@ -38,6 +39,7 @@ export function Footer() {
             />
           </Box>
 
+          {/* Projetos */}
           <Box sx={{ flex: 1, minWidth: '150px', textAlign: { xs: 'center', sm: 'left' } }}>
             <Typography
               variant="h6"
@@ -49,26 +51,27 @@ export function Footer() {
                 opacity: 0.8,
               }}
             >
-              Estudantes
+              Projetos
             </Typography>
             <Box>
               <Link
-                href="/acompanhar-pedido"
+                href="/projetos"
                 underline="none"
                 color="inherit"
                 sx={{
                   '&:hover': {
-                    color: '#023047',
+                    color: '#ccc',
                   },
                 }}
               >
                 <Typography variant="body2" sx={{ mb: 1 }}>
-                  Acompanhe seu pedido
+                  Veja meus trabalhos
                 </Typography>
               </Link>
             </Box>
           </Box>
 
+          {/* Serviços */}
           <Box sx={{ flex: 1, minWidth: '150px', textAlign: { xs: 'center', sm: 'left' } }}>
             <Typography
               variant="h6"
@@ -80,40 +83,41 @@ export function Footer() {
                 opacity: 0.8,
               }}
             >
-              Carteirinha
+              Serviços
             </Typography>
             <Box>
               <Link
-                href="/solicitar/estudante"
+                href="/servicos"
                 underline="none"
                 color="inherit"
                 sx={{
                   '&:hover': {
-                    color: '#023047',
+                    color: '#ccc',
                   },
                 }}
               >
                 <Typography variant="body2" sx={{ mb: 1 }}>
-                  Estudante
+                  Desenvolvimento Web
                 </Typography>
               </Link>
-              {/* <Link
-                href="/solicitar/professor"
+              <Link
+                href="/servicos/design"
                 underline="none"
                 color="inherit"
                 sx={{
                   '&:hover': {
-                    color: '#023047',
+                    color: '#ccc',
                   },
                 }}
               >
                 <Typography variant="body2" sx={{ mb: 1 }}>
-                  Professor/Téc. Administrativo
+                  Design de Interfaces
                 </Typography>
-              </Link> */}
+              </Link>
             </Box>
           </Box>
 
+          {/* Sobre mim */}
           <Box sx={{ flex: 1, minWidth: '150px', textAlign: { xs: 'center', sm: 'left' } }}>
             <Typography
               variant="h6"
@@ -125,28 +129,29 @@ export function Footer() {
                 opacity: 0.8,
               }}
             >
-              Sobre
+              Sobre mim
             </Typography>
             <Link
-              href="/sobre-nos"
+              href="/sobre"
               underline="none"
               color="inherit"
               sx={{
                 '&:hover': {
-                  color: '#023047',
+                  color: '#ccc',
                 },
               }}
             >
               <Typography variant="body2" sx={{ mb: 1 }}>
-                União Estudantil
+                Conheça minha história
               </Typography>
             </Link>
           </Box>
 
+          {/* Redes sociais */}
           <Box sx={{ flex: 1, minWidth: '250px', textAlign: 'center' }}>
             <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
-              <Link
-                href="https://www.facebook.com"
+            <Link
+                href="https://www.linkedin.com"
                 color="inherit"
                 target="_blank"
                 sx={{
@@ -156,12 +161,11 @@ export function Footer() {
                   },
                 }}
               >
-                <FacebookIcon fontSize="large" />
+                <LinkedInIcon fontSize="large" />
               </Link>
               <Link
-                href="https://www.instagram.com"
+                href="mailto:seuemail@exemplo.com"
                 color="inherit"
-                target="_blank"
                 sx={{
                   '&:hover': {
                     transform: 'scale(1.3)',
@@ -169,10 +173,10 @@ export function Footer() {
                   },
                 }}
               >
-                <InstagramIcon fontSize="large" />
+                <EmailIcon fontSize="large" />
               </Link>
               <Link
-                href="https://api.whatsapp.com/send/?phone=556381066332"
+                href="https://wa.me/5563984038535"
                 color="inherit"
                 target="_blank"
                 sx={{
@@ -186,17 +190,6 @@ export function Footer() {
               </Link>
             </Box>
           </Box>
-        </Box>
-
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            textAlign: 'left',
-            mt: 3,
-          }}
-        >
         </Box>
 
         <Divider sx={{ my: 3, bgcolor: 'rgba(255, 255, 255, 0.4)' }} />
@@ -217,8 +210,6 @@ export function Footer() {
             Desenvolvido por Zhydani Reis
           </Typography>
         </Box>
-
-
       </Container>
     </Box>
   );
