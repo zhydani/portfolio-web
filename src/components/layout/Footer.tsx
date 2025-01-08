@@ -31,10 +31,10 @@ export function Footer() {
         >
           <Box sx={{ flex: 1, minWidth: '250px', textAlign: { xs: 'center', sm: 'left' } }}>
             <Image
-              src="/logo.png"
-              alt="Logo União Estudantil"
-              width={200}
-              height={55}
+              src="/logo-z2.png"
+              alt="Logo Z2 Sistemas"
+              width={80}
+              height={80}
             />
           </Box>
 
@@ -197,26 +197,6 @@ export function Footer() {
             mt: 3,
           }}
         >
-          {/* <Typography
-            variant="body2"
-            sx={{
-              color: 'rgba(255, 255, 255, 0.7)',
-            }}
-          >
-            Foto de{' '}
-            <Link
-              href="https://www.freepik.com/free-photo/portrait-young-woman-pointing-sale-smartphone-screen-showing-mobile-phone-display-app-interface-smiling-satisfied-standing-yellow-tshirt-white-background_25039487.htm#fromView=search&page=1&position=52&uuid=fe0f6967-7b1e-4fa9-82ff-8ffcd394ad98"
-              target="_blank"
-              rel="noopener"
-              underline="hover"
-              color="inherit"
-              sx={{
-                '&:hover': { color: '#ffd700' },
-              }}
-            >
-              Freepik
-            </Link>
-          </Typography> */}
         </Box>
 
         <Divider sx={{ my: 3, bgcolor: 'rgba(255, 255, 255, 0.4)' }} />
@@ -231,7 +211,7 @@ export function Footer() {
           }}
         >
           <Typography variant="body2" color="inherit">
-            © {currentYear} União Estudantil do Tocantins
+            © {currentYear} Z2 Sistemas
           </Typography>
           <Typography variant="body2" color="inherit">
             Desenvolvido por Zhydani Reis
