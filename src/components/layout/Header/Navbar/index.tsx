@@ -119,8 +119,9 @@ export function Navbar() {
                 </Button>
               ))}
               <Button
-                component={Link}
-                href="/solicitar/estudante"
+                href="https://wa.me/5563984038535"
+                target="_blank"
+                rel="noopener noreferrer"
                 endIcon={<ArrowRightAltIcon sx={{ marginLeft: 0.5 }} />}
                 variant="contained"
                 sx={{
@@ -185,8 +186,9 @@ export function Navbar() {
             <ListItem disablePadding>
               <Box sx={{ width: "100%", padding: 1.5 }}>
                 <Button
-                  component={Link}
-                  href="/solicitar/estudante"
+                  href="https://wa.me/5563984038535"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   endIcon={<ArrowRightAltIcon sx={{ marginLeft: 0.5 }} />}
                   variant="contained"
                   sx={{
