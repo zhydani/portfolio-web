@@ -162,7 +162,7 @@ export function Navbar() {
                   <ListItemText
                     primary={item.label}
                     sx={{
-                      color: "#004e94",
+                      color: "black",
                       fontWeight: "medium",
                     }}
                   />
@@ -178,7 +178,7 @@ export function Navbar() {
                   variant="contained"
                   sx={{
                     width: "100%",
-                    backgroundImage: "linear-gradient(90deg, #ff9f32 0%, #fb8500 100%)",
+                    backgroundImage: "linear-gradient(90deg, #b873ea 0%, #9d44de 100%)",
                     color: "white",
                     borderRadius: 3,
                     px: 2,
@@ -186,12 +186,12 @@ export function Navbar() {
                     fontWeight: "bold",
                     transition: "transform 0.3s ease",
                     "&:hover": {
-                      backgroundImage: "linear-gradient(90deg, #ca7e27 0%, #d77300 100%)",
+                      backgroundImage: "linear-gradient(90deg, #7f36b4 0%, #6d14ad 100%)",
                       transform: "translateY(-5px)",
                     },
                   }}
                 >
-                  Solicite agora
+                  Entrar em contato
                 </Button>
               </Box>
             </ListItem>
