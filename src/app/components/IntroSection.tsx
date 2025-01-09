@@ -68,7 +68,6 @@ const IntroSection = () => {
           <Image
             src="/perfil.jpg"
             alt="Zhydani Reis"
-            layout="responsive"
             width={300}
             height={300}
           />
