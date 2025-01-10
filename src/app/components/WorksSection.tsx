@@ -1,31 +1,30 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Image from "next/image";
-import Link from "next/link";
 
 const WorksSection = () => {
   const works = [
     {
-      title: "Mobile App UI Design",
-      imageUrl: "/works/mobile-app-design.jpg",
-      link: "https://example-mobileapp.com", // Substituir pelo link real
+      title: "Site Institucional",
+      imageUrl: "/works/lucre-contabilidade.png",
+      link: "https://www.lucrecontabilidade.site/",
     },
     {
       title: "Website Design",
-      imageUrl: "/works/website-design.jpg",
-      link: "https://example-website.com", // Substituir pelo link real
-    },
-    {
-      title: "E-commerce Platform",
-      imageUrl: "/works/ecommerce-platform.jpg",
-      link: "https://example-ecommerce.com", // Substituir pelo link real
+      imageUrl: "/works/transparencia-figma.png",
+      link: "https://www.figma.com/design/Wivxa9Vn0WZIgTNTC8dBA8/Novo-Portal-da-Transpar%C3%AAncia?m=auto&t=goMKkAyWq0uHqid6-6",
     },
   ];
 
   return (
-    <Box sx={{ py: 6, backgroundColor: "#f5f5f5" }}>
-      <Container maxWidth="lg">
-        {/* Título da seção */}
+    <Box sx={{ py: 6, backgroundColor: "#f9eefe" }}>
+      <Container
+        maxWidth="lg"
+        sx={{
+          textAlign: "left",
+        }}
+      >
         <Typography
           variant="h4"
           component="h2"
@@ -34,61 +33,93 @@ const WorksSection = () => {
             mb: 4,
             textTransform: "uppercase",
             fontSize: "2.2rem",
-            textAlign: "left", // Alinha o título à esquerda
           }}
         >
           Trabalhos Recentes
         </Typography>
 
-        {/* Trabalhos */}
         <Grid container spacing={4}>
           {works.map((work, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
-              <Link href={work.link} passHref>
+            <Grid item xs={12} sm={6} key={index}>
+              <a
+                href={work.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
                 <Box
-                  component="a"
                   sx={{
-                    display: "block",
                     textAlign: "center",
-                    borderRadius: 3,
-                    overflow: "hidden",
+                    p: 2,
+                    borderRadius: 2,
+                    backgroundImage: "linear-gradient(90deg, #b873ea 0%, #9d44de 100%)",
+                    color: "white",
                     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                     transition: "transform 0.3s ease, box-shadow 0.3s ease",
                     "&:hover": {
-                      transform: "scale(1.05)",
                       boxShadow: "0 6px 10px rgba(0, 0, 0, 0.15)",
+                      transform: "scale(1.05)",
                     },
                   }}
                 >
-                  {/* Imagem */}
-                  <Image
-                    src={work.imageUrl}
-                    alt={work.title}
-                    width={600}
-                    height={400}
-                    style={{
-                      objectFit: "cover",
-                      width: "100%",
-                      height: "auto",
+                  <Box
+                    sx={{
+                      p: 1,
+                      backgroundColor: "#ffffff", 
+                      borderRadius: "8px",
+                      mb: 2,
                     }}
-                  />
-                  {/* Título */}
+                  >
+                    <Image
+                      src={work.imageUrl}
+                      alt={work.title}
+                      width={700}
+                      height={400}
+                      style={{
+                        borderRadius: "8px",
+                        objectFit: "cover",
+                        maxWidth: "100%",
+                        height: "auto",
+                      }}
+                    />
+                  </Box>
                   <Typography
                     variant="h6"
                     sx={{
-                      mt: 2,
                       fontWeight: "bold",
-                      textTransform: "uppercase",
-                      color: "#333",
+                      mb: 1,
                     }}
                   >
                     {work.title}
                   </Typography>
                 </Box>
-              </Link>
+              </a>
             </Grid>
           ))}
         </Grid>
+
+        <Box sx={{ textAlign: "center", mt: 6 }}>
+          <Button
+            href="/works"
+            variant="contained"
+            endIcon={<ArrowRightAltIcon sx={{ marginLeft: 0.5 }} />}
+            sx={{
+              backgroundImage: "linear-gradient(90deg, #b873ea 0%, #9d44de 100%)",
+              color: "white",
+              borderRadius: 3,
+              px: 4,
+              fontSize: "1rem",
+              fontWeight: "bold",
+              transition: "transform 0.3s ease",
+              "&:hover": {
+                backgroundImage: "linear-gradient(90deg, #7f36b4 0%, #6d14ad 100%)",
+                transform: "translateY(-5px)",
+              },
+            }}
+          >
+            Ver Mais
+          </Button>
+        </Box>
       </Container>
     </Box>
   );
