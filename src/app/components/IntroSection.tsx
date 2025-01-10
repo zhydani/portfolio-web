@@ -47,9 +47,9 @@ const IntroSection = () => {
               color: "#444",
             }}
           >
-            Faço sites, aplicativos, sistemas
+            Ajudo empresas e pessoas a criar e melhorar 
             <br />
-            e design para a web
+            seus sites, aplicativos e designs para a web
           </Typography>
         </Box>
 
