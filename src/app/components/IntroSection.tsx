@@ -47,9 +47,9 @@ const IntroSection = () => {
               color: "#444",
             }}
           >
-            Sou Desenvolvedora Fullstack
+            Faço sites, aplicativos, sistemas
             <br />
-            & Web Desginer
+            e design para a web
           </Typography>
         </Box>
 
