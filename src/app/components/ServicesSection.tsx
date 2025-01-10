@@ -69,7 +69,6 @@ const ServicesSection = () => {
                   width={150}
                   height={150}
                   style={{
-                    borderRadius: "50%",
                     marginBottom: "16px",
                   }}
                 />
