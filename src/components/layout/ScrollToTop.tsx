@@ -33,10 +33,10 @@ export function ScrollToTop() {
   return (
     <Fab
       sx={{
-        bgcolor: '#fb8500',
+        backgroundImage: "linear-gradient(90deg, #b873ea 0%, #9d44de 100%)",
         color: 'white',
         '&:hover': {
-          bgcolor: '#d77300 ',
+          backgroundImage: "linear-gradient(90deg, #7f36b4 0%, #6d14ad 100%)",
         },
         position: 'fixed',
         bottom: 20,
