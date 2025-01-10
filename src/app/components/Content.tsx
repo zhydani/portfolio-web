@@ -3,6 +3,7 @@ import React from "react";
 import IntroSection from "./IntroSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
+import WorksSection from "./WorksSection";
 
 export default function Content() {
 
@@ -11,6 +12,7 @@ export default function Content() {
       <IntroSection />
       <AboutSection />
       <ServicesSection />
+      <WorksSection />
     </Box>
   );
 }
