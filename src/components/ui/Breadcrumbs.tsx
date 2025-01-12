@@ -9,11 +9,17 @@ interface BreadcrumbsSectionProps {
 
 export const BreadcrumbsSection: React.FC<BreadcrumbsSectionProps> = ({ pageName }) => {
   return (
-    <Box pt={4}>
+    <Box 
+      pt={4}
+      sx={{
+        backgroundColor: "#f9eefe",
+        minHeight: "15vh",
+      }}
+    >
       <Container maxWidth="lg">
         <Box
           sx={{
-            backgroundColor: '#f5f5f5',
+            backgroundColor: 'white',
             borderRadius: 3,
             py: 2,
             px: { xs: 2, sm: 4 },
