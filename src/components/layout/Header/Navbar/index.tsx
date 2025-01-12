@@ -30,6 +30,7 @@ export function Navbar() {
   };
 
   const menuItems = [
+    { label: "Início", href: "/" },
     { label: "Sobre", href: "/sobre" },
     { label: "Serviços", href: "/servicos" },
     { label: "Trabalhos", href: "/trabalhos" },
