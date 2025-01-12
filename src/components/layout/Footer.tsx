@@ -33,7 +33,7 @@ export function Footer() {
           <Box sx={{ flex: 1, minWidth: '250px', textAlign: { xs: 'center', sm: 'left' } }}>
             <Image
               src="/logo-z2.png"
-              alt="Logo Z2 Sistemas"
+              alt="Logo Zhydani Reis"
               width={80}
               height={80}
             />
@@ -204,11 +204,11 @@ export function Footer() {
           }}
         >
           <Typography variant="body2" color="inherit">
-            © {currentYear} Z2 Sistemas
+            © {currentYear} Zhydani Reis
           </Typography>
-          <Typography variant="body2" color="inherit">
+          {/* <Typography variant="body2" color="inherit">
             Desenvolvido por Zhydani Reis
-          </Typography>
+          </Typography> */}
         </Box>
       </Container>
     </Box>

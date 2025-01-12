@@ -13,7 +13,7 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: 'Z2 Sistemas',
+  title: 'Zhydani Reis',
   description: 'Desenvolvido por Zhydani',
 }
 

@@ -72,7 +72,7 @@ export function Navbar() {
                     letterSpacing: "0.05rem",
                   }}
                 >
-                  Z2 Sistemas
+                  Zhydani Reis
                 </Typography>
               </Box>
 
