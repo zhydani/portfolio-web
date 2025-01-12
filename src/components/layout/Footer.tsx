@@ -55,7 +55,7 @@ export function Footer() {
             </Typography>
             <Box>
               <Link
-                href="/projetos"
+                href="/trabalhos"
                 underline="none"
                 color="inherit"
                 sx={{
@@ -151,7 +151,7 @@ export function Footer() {
           <Box sx={{ flex: 1, minWidth: '250px', textAlign: 'center' }}>
             <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
             <Link
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/zhydani/"
                 color="inherit"
                 target="_blank"
                 sx={{
@@ -164,7 +164,7 @@ export function Footer() {
                 <LinkedInIcon fontSize="large" />
               </Link>
               <Link
-                href="mailto:seuemail@exemplo.com"
+                href="mailto:zhydani@gmail.com"
                 color="inherit"
                 sx={{
                   '&:hover': {

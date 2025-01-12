@@ -30,9 +30,9 @@ export function Navbar() {
   };
 
   const menuItems = [
-    { label: "Sobre", href: "/" },
-    { label: "Serviços", href: "/" },
-    { label: "Trabalhos", href: "/" },
+    { label: "Sobre", href: "/sobre" },
+    { label: "Serviços", href: "/servicos" },
+    { label: "Trabalhos", href: "/trabalhos" },
   ];
 
   return (
