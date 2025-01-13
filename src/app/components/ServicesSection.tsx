@@ -37,7 +37,7 @@ const ServicesSection = () => {
           sx={{
             fontWeight: "bold",
             mb: 4,
-            textTransform: "uppercase",
+            // textTransform: "uppercase",
             fontSize: "2.2rem",
           }}
         >

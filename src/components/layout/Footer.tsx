@@ -101,7 +101,7 @@ export function Footer() {
                 </Typography>
               </Link>
               <Link
-                href="/servicos/design"
+                href="/servicos"
                 underline="none"
                 color="inherit"
                 sx={{

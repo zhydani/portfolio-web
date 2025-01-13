@@ -20,7 +20,7 @@ const WorksSection = () => {
   return (
     <Box sx={{ py: 6, backgroundColor: "#f9eefe" }}>
       <Container
-        maxWidth="lg"
+        maxWidth="md"
         sx={{
           textAlign: "left",
         }}
@@ -31,7 +31,7 @@ const WorksSection = () => {
           sx={{
             fontWeight: "bold",
             mb: 4,
-            textTransform: "uppercase",
+            // textTransform: "uppercase",
             fontSize: "2.2rem",
           }}
         >
