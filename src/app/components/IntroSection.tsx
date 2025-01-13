@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
 
 const IntroSection = () => {
   return (
@@ -37,7 +38,14 @@ const IntroSection = () => {
               color: "#000",
             }}
           >
-            Olá, sou Zhydani Reis
+            <Typewriter
+              words={["Olá, sou Zhydani Reis"]}
+              loop={1} 
+              cursor
+              cursorStyle="|"
+              typeSpeed={100} 
+              deleteSpeed={50} 
+            />
           </Typography>
           <Typography
             variant="h6"
