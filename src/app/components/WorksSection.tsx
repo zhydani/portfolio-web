@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Image from "next/image";
+import NextLink from 'next/link';
 
 const WorksSection = () => {
   const works = [
@@ -100,7 +101,8 @@ const WorksSection = () => {
 
         <Box sx={{ textAlign: "center", mt: 6 }}>
           <Button
-            href="/works"
+            component={NextLink}
+            href="/trabalhos"
             variant="contained"
             endIcon={<ArrowRightAltIcon sx={{ marginLeft: 0.5 }} />}
             sx={{
