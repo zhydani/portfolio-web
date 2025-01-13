@@ -59,6 +59,36 @@ export default function Content() {
             fontSize: "1.5rem",
           }}
         >
+          Meu TCC
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            mb: 3,
+            lineHeight: 1.9,
+            fontSize: "1.2rem",
+            color: "#555",
+            textAlign: "left",
+          }}
+        >
+          Meu Trabalho de Conclusão de Curso teve como tema <strong>“Desenvolvimento e Avaliação de App como Alternativa de Proteção 
+          para as Mulheres em Situação de Violência Doméstica em Palmas - TO”</strong>. O projeto consistiu na criação de um aplicativo funcional, 
+          desenvolvido em <strong>React</strong> com <strong>Firebase Cloud Firestore</strong> como backend. 
+          Durante o desenvolvimento, criei o protótipo no <strong>Figma</strong> e realizei testes automatizados utilizando <strong>Jest</strong>. 
+          Esse trabalho reforçou minha paixão por desenvolver soluções tecnológicas com impacto social.
+        </Typography>
+
+        <Typography
+          variant="h5"
+          component="h3"
+          sx={{
+            fontWeight: "bold",
+            mt: 4,
+            mb: 2,
+            textTransform: "uppercase",
+            fontSize: "1.5rem",
+          }}
+        >
           Certificados
         </Typography>
         <List>
@@ -78,6 +108,34 @@ export default function Content() {
             />
           </ListItem>
         </List>
+
+        <Typography
+          variant="h5"
+          component="h3"
+          sx={{
+            fontWeight: "bold",
+            mt: 4,
+            mb: 2,
+            textTransform: "uppercase",
+            fontSize: "1.5rem",
+          }}
+        >
+          Experiência em Web Design
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            mb: 3,
+            lineHeight: 1.9,
+            fontSize: "1.2rem",
+            color: "#555",
+            textAlign: "left",
+          }}
+        >
+          Tenho ampla experiência em <strong>Photoshop</strong> e <strong>Figma</strong>, ferramentas que utilizei para criar artes, protótipos e layouts 
+          ao longo de diversos projetos. Minhas habilidades em design complementam meu trabalho como desenvolvedora, garantindo que 
+          os produtos finais sejam funcionais e visualmente atraentes.
+        </Typography>
 
         <Typography
           variant="h5"
