@@ -12,27 +12,24 @@ export const BreadcrumbsSection: React.FC<BreadcrumbsSectionProps> = ({ pageName
     <Box 
       pt={4}
       sx={{
-        backgroundColor: "#f9eefe",
-        minHeight: "15vh",
+        backgroundImage: "linear-gradient(90deg, #b873ea 0%, #9d44de 100%)",
+        minHeight: "10vh",
       }}
     >
       <Container maxWidth="lg">
         <Box
           sx={{
-            backgroundColor: 'white',
-            borderRadius: 3,
-            py: 2,
             px: { xs: 2, sm: 4 },
           }}
         >
           <Breadcrumbs
-            separator={<NavigateNextIcon fontSize="small" sx={{ color: '#757575' }} />}
+            separator={<NavigateNextIcon fontSize="small" sx={{ color: '#fff' }} />}
             aria-label="breadcrumb"
             sx={{
               display: 'flex',
               alignItems: 'center',
               flexWrap: { xs: 'wrap', sm: 'nowrap' },
-              color: '#757575',
+              color: '#fff',
             }}
           >
             <Link
@@ -42,7 +39,7 @@ export const BreadcrumbsSection: React.FC<BreadcrumbsSectionProps> = ({ pageName
               sx={{
                 display: 'flex',
                 alignItems: 'center',
-                color: '#424242',
+                color: '#fff',
                 fontWeight: 'bold',
                 fontSize: { xs: '0.9rem', sm: '1rem' },
                 '&:hover': {
@@ -57,7 +54,7 @@ export const BreadcrumbsSection: React.FC<BreadcrumbsSectionProps> = ({ pageName
               color="inherit"
               sx={{
                 fontWeight: 'bold',
-                color: '#424242',
+                color: '#fff',
                 fontSize: { xs: '0.9rem', sm: '1rem' },
               }}
             >
