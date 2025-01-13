@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Breadcrumbs, Container, Link, Typography } from '@mui/material';
+import { Box, Breadcrumbs, Container, Link, Typography, Tooltip } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
@@ -50,16 +50,19 @@ export const BreadcrumbsSection: React.FC<BreadcrumbsSectionProps> = ({ pageName
               <HomeIcon sx={{ mr: 0.5, fontSize: { xs: '1rem', sm: 'inherit' } }} />
               Início
             </Link>
-            <Typography
-              color="inherit"
-              sx={{
-                fontWeight: 'bold',
-                color: '#fff',
-                fontSize: { xs: '0.9rem', sm: '1rem' },
-              }}
-            >
-              {pageName}
-            </Typography>
+            <Tooltip title="Você está aqui">
+              <Typography
+                color="inherit"
+                sx={{
+                  fontWeight: 'bold',
+                  color: '#fff',
+                  fontSize: { xs: '0.9rem', sm: '1rem' },
+                  cursor: 'default',
+                }}
+              >
+                {pageName}
+              </Typography>
+            </Tooltip>
           </Breadcrumbs>
         </Box>
       </Container>
