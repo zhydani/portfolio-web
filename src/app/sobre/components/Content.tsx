@@ -13,6 +13,7 @@ export default function Content() {
             mb: 4,
             textTransform: "uppercase",
             fontSize: "2.2rem",
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Sobre
@@ -25,7 +26,7 @@ export default function Content() {
             lineHeight: 1.9,
             fontSize: "1.2rem",
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" }, 
           }}
         >
           Olá, eu sou Zhydani Reis! Sou graduada em <strong>Sistemas de Informação</strong> pela Universidade Estadual do Tocantins 
@@ -40,7 +41,7 @@ export default function Content() {
             lineHeight: 1.9,
             fontSize: "1.2rem",
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" },
           }}
         >
           Certificada em <strong>HTML, CSS, JavaScript</strong> e <strong>Web Design</strong>, trabalho com foco em criar experiências digitais intuitivas, 
@@ -57,6 +58,7 @@ export default function Content() {
             mb: 2,
             textTransform: "uppercase",
             fontSize: "1.5rem",
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Meu TCC
@@ -68,7 +70,7 @@ export default function Content() {
             lineHeight: 1.9,
             fontSize: "1.2rem",
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" },
           }}
         >
           Meu Trabalho de Conclusão de Curso teve como tema <strong>“Desenvolvimento e Avaliação de App como Alternativa de Proteção 
@@ -87,6 +89,7 @@ export default function Content() {
             mb: 2,
             textTransform: "uppercase",
             fontSize: "1.5rem",
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Certificados
@@ -118,6 +121,7 @@ export default function Content() {
             mb: 2,
             textTransform: "uppercase",
             fontSize: "1.5rem",
+            textAlign: { xs: "center", md: "left" },
           }}
         >
           Experiência em Web Design
@@ -129,7 +133,7 @@ export default function Content() {
             lineHeight: 1.9,
             fontSize: "1.2rem",
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" },
           }}
         >
           Tenho ampla experiência em <strong>Photoshop</strong> e <strong>Figma</strong>, ferramentas que utilizei para criar artes, protótipos e layouts 
@@ -146,6 +150,7 @@ export default function Content() {
             mb: 2,
             textTransform: "uppercase",
             fontSize: "1.5rem",
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Projetos de Destaque
@@ -157,7 +162,7 @@ export default function Content() {
             lineHeight: 1.9,
             fontSize: "1.2rem",
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" },
           }}
         >
           Em 2020, participei do projeto <strong>O Apto – Análise dos Portais da Transparência no Tocantins</strong>, 
@@ -173,7 +178,7 @@ export default function Content() {
             lineHeight: 1.9,
             fontSize: "1.2rem",
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" },
           }}
         >
           Adicionei a <strong>barra de acessibilidade</strong> no portal do <strong>TJTO</strong>, contribuindo para 
@@ -189,6 +194,7 @@ export default function Content() {
             mb: 2,
             textTransform: "uppercase",
             fontSize: "1.5rem",
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Publicações de Aplicativos
@@ -199,7 +205,7 @@ export default function Content() {
             lineHeight: 1.9,
             fontSize: "1.2rem",
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" },
           }}
         >
           Já publiquei mais de <strong>7 aplicativos</strong> na Apple Store e Google Play utilizando <strong>React Native</strong>. 

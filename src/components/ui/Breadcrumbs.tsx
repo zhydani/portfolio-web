@@ -27,7 +27,6 @@ export const BreadcrumbsSection: React.FC<BreadcrumbsSectionProps> = ({ pageName
             sx={{
               fontWeight: 'bold',
               color: '#fff',
-              textAlign: { xs: 'center', md: 'left' },
               fontSize: { xs: '1.5rem', md: '2rem' },
             }}
           >
