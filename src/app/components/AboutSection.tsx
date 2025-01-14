@@ -3,12 +3,15 @@ import { Box, Container, Typography } from "@mui/material";
 
 const AboutSection = () => {
   return (
-    <Box sx={{ py: 6, backgroundColor: "#f9f9f9" }}>
+    <Box
+      sx={{
+        py: { xs: 4, md: 6 },
+        backgroundColor: "#f9f9f9",
+        px: { xs: 2, md: 0 }, 
+      }}
+    >
       <Container
         maxWidth="md"
-        sx={{
-          maxWidth: 700,
-        }}
       >
         <Typography
           variant="h4"
@@ -16,8 +19,8 @@ const AboutSection = () => {
           sx={{
             fontWeight: "bold",
             mb: 4,
-            // textTransform: "uppercase",
-            fontSize: "2.2rem", 
+            fontSize: { xs: "1.8rem", md: "2.2rem" }, 
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Sobre
@@ -27,10 +30,10 @@ const AboutSection = () => {
           variant="body1"
           sx={{
             mb: 3,
-            lineHeight: 1.9, 
-            fontSize: "1.2rem", 
-            color: "#555", 
-            textAlign: "left", 
+            lineHeight: 1.8, 
+            fontSize: { xs: "1rem", md: "1.2rem" }, 
+            color: "#555",
+            textAlign: { xs: "justify", md: "left" }, 
           }}
         >
           Olá, eu sou Zhydani Reis! Sou graduada em <strong>Sistemas de Informação</strong> pela Universidade Estadual do Tocantins 
@@ -41,10 +44,10 @@ const AboutSection = () => {
         <Typography
           variant="body1"
           sx={{
-            lineHeight: 1.9,
-            fontSize: "1.2rem",
+            lineHeight: 1.8,
+            fontSize: { xs: "1rem", md: "1.2rem" },
             color: "#555",
-            textAlign: "left",
+            textAlign: { xs: "justify", md: "left" },
           }}
         >
           Certificada em <strong>HTML, CSS, JavaScript</strong> e <strong>Web Design</strong>, trabalho com foco em criar experiências digitais intuitivas, 
