@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Image from "next/image";
-import NextLink from 'next/link';
+import NextLink from "next/link";
 
 const ServicesSection = () => {
   const services = [
@@ -24,12 +24,13 @@ const ServicesSection = () => {
   ];
 
   return (
-    <Box sx={{ py: 6, backgroundColor: "#f9f9f9" }}>
+    <Box sx={{ py: { xs: 4, md: 6 }, backgroundColor: "#f9f9f9" }}>
       <Container
         maxWidth="md"
         sx={{
           maxWidth: 700,
           textAlign: "left",
+          px: { xs: 2, md: 2 }, 
         }}
       >
         <Typography
@@ -38,16 +39,29 @@ const ServicesSection = () => {
           sx={{
             fontWeight: "bold",
             mb: 4,
-            // textTransform: "uppercase",
-            fontSize: "2.2rem",
+            fontSize: { xs: "1.8rem", md: "2.2rem" }, 
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Serviços
         </Typography>
 
-        <Grid container spacing={4}>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 4 }}
+        >
           {services.map((service, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              key={index}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Box
                 sx={{
                   textAlign: "center",
@@ -58,7 +72,8 @@ const ServicesSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  height: "100%",
+                  maxWidth: { xs: "100%", sm: "300px" }, 
+                  width: "100%",
                   "&:hover": {
                     boxShadow: "0 6px 10px rgba(0, 0, 0, 0.15)",
                   },
@@ -67,8 +82,8 @@ const ServicesSection = () => {
                 <Image
                   src={service.iconUrl}
                   alt={service.title}
-                  width={150}
-                  height={150}
+                  width={120}
+                  height={120}
                   style={{
                     marginBottom: "16px",
                   }}
@@ -79,7 +94,7 @@ const ServicesSection = () => {
                     fontWeight: "bold",
                     mb: 1,
                     textTransform: "uppercase",
-                    fontSize: "1.1rem",
+                    fontSize: { xs: "1rem", md: "1.1rem" }, 
                   }}
                 >
                   {service.title}
@@ -89,7 +104,7 @@ const ServicesSection = () => {
                   sx={{
                     color: "#555",
                     lineHeight: 1.6,
-                    flexGrow: 1, 
+                    fontSize: { xs: "0.9rem", md: "1rem" }, 
                   }}
                 >
                   {service.description}
