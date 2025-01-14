@@ -32,8 +32,8 @@ const WorksSection = () => {
           sx={{
             fontWeight: "bold",
             mb: 4,
-            // textTransform: "uppercase",
-            fontSize: "2.2rem",
+            fontSize: { xs: "1.8rem", md: "2.2rem" }, 
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           Trabalhos Recentes
